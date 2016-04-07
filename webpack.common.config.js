@@ -20,7 +20,7 @@ module.exports = {
             test: /\.html$/,
             loader: 'file?name=[name].[ext]'
         }, {
-            test: /\.(jpe?g|png|git)$/,
+            test: /\.(jpe?g|png|gif)$/,
             exclude: /(node_modules)/,
             loader: 'url-loader?limit=10000'
         }, {
