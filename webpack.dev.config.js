@@ -7,6 +7,14 @@ var output = {
     filename: 'bundle.js'
 };
 
-module.exports = Object.assign({
-    output: output
-}, commonConfig);
+module.exports = Object.assign(commonConfig, {
+    output: output,
+    devtool: 'source-map',
+    module: {
+        loaders: commonConfig.module.loaders.concat({
+            test: /\.s?css$/,
+            exclude: /(node_modules)/,
+            loaders: ['style', 'css?sourceMap', 'autoprefixer-loader', 'sass?sourceMap'] // For debugging css
+        })
+    }
+});

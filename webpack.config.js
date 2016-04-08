@@ -7,6 +7,13 @@ var output = {
     filename: 'bundle.js'
 };
 
-module.exports = Object.assign({
-    output: output
-}, commonConfig);
+module.exports = Object.assign(commonConfig, {
+    output: output,
+    module: {
+        loaders: commonConfig.module.loaders.concat({
+            test: /\.s?css$/,
+            exclude: /(node_modules)/,
+            loaders: ['style', 'css', 'autoprefixer-loader', 'sass'] // For single buddle js
+        })
+    }
+});
