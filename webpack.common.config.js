@@ -5,17 +5,11 @@ module.exports = {
     entry: [
         './js/app.js'
     ],
-    devtool: 'source-map',
     module: {
         loaders: [{
             test: /\.js$/,
             exclude: /(node_modules)/,
             loader: 'babel'
-        }, {
-            test: /\.s?css$/,
-            exclude: /(node_modules)/,
-            // loaders: ['style', 'css', 'autoprefixer-loader', 'sass'] // For single buddle js
-            loaders: ['style', 'css?sourceMap', 'autoprefixer-loader', 'sass?sourceMap'] // For debugging css
         }, {
             test: /\.html$/,
             loader: 'file?name=[name].[ext]'
