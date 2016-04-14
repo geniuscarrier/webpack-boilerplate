@@ -1,4 +1,69 @@
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import '../node_modules/font-awesome/css/font-awesome.min.css';
-@import '../node_modules/animate.css/animate.min.css';
-@import 'color';
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../node_modules/animate.css/animate.min.css";
+@import "color";
+@import "carousel";
+
+/* EXAMPLE CSS STARTS */
+.jumbotron {
+    margin-bottom: 0;
+}
+
+#marketing {
+    padding-top: 60px;
+    .col-lg-4 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    h2 {
+        font-weight: normal;
+    }
+    .col-lg-4 p {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+#contact-us .jumbotron {
+    background-color: #ffffff;
+    p {
+        &:not(:first-of-type) {
+            font-size: 18px;
+        }
+    }
+}
+
+.footer {
+    padding: 40px 0;
+    color: #999;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+
+/* EXAMPLE CSS ENDS */
