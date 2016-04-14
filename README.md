@@ -11,6 +11,9 @@ A webpack boilerplate that includes the following libs:
 
 in order to quickly build up a production-ready marketing website.
 
+###Example Page
+![DEMO](http://geniuscarrier.me/images/webpack-boilerplate.gif)
+
 ###Install dependencies
 
 ```
