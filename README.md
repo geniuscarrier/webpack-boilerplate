@@ -12,7 +12,7 @@ A webpack boilerplate that includes the following libs:
 in order to quickly build up a production-ready marketing website.
 
 ###Example Page
-[DEMO](http://geniuscarrier.com/webpack-boilerplate/)
+[DEMO](http://geniuscarrier.com/demo/webpack-boilerplate/)
 
 ![GIF](http://geniuscarrier.me/images/webpack-boilerplate.gif)
 
