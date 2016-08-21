@@ -1,5 +1,7 @@
 var path = require('path');
 var commonConfig = require('./webpack.common.config');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var extractCSS = new ExtractTextPlugin('style.css');
 
 var output = {
     path: path.resolve(__dirname, 'build'),
@@ -13,7 +15,8 @@ module.exports = Object.assign(commonConfig, {
         loaders: commonConfig.module.loaders.concat({
             test: /\.s?css$/,
             exclude: /(node_modules)/,
-            loaders: ['style', 'css', 'postcss', 'sass'] // For single buddle js
+            loader: extractCSS.extract('style', 'css!postcss!sass')
         })
-    }
+    },
+    plugins: commonConfig.plugins.concat(extractCSS)
 });
