@@ -14,7 +14,7 @@ module.exports = Object.assign(commonConfig, {
         loaders: commonConfig.module.loaders.concat({
             test: /\.s?css$/,
             exclude: /(node_modules)/,
-            loaders: ['style', 'css?sourceMap', 'autoprefixer-loader', 'sass?sourceMap'] // For debugging css
+            loaders: ['style', 'css?sourceMap', 'postcss?sourceMap', 'sass?sourceMap'] // For debugging css
         })
     }
 });

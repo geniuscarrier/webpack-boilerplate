@@ -1,5 +1,6 @@
 var ProvidePlugin = require('webpack').ProvidePlugin;
 var path = require('path');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
     entry: [
@@ -24,6 +25,9 @@ module.exports = {
             test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             loader: "file-loader"
         }]
+    },
+    postcss: function() {
+        return [autoprefixer];
     },
     plugins: [
         new ProvidePlugin({

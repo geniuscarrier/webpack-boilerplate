@@ -11,7 +11,6 @@
   "license": "ISC",
   "devDependencies": {
     "animate.css": "git+https://github.com/daneden/animate.css.git",
-    "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.7.2",
     "babel-eslint": "^6.1.0",
     "babel-loader": "^6.2.4",
@@ -24,6 +23,7 @@
     "jquery": "^2.2.2",
     "jquery.scrollto": "^2.1.2",
     "node-sass": "^3.4.2",
+    "postcss-loader": "^0.10.1",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",

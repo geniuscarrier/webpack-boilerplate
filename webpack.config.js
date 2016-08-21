@@ -13,7 +13,7 @@ module.exports = Object.assign(commonConfig, {
         loaders: commonConfig.module.loaders.concat({
             test: /\.s?css$/,
             exclude: /(node_modules)/,
-            loaders: ['style', 'css', 'autoprefixer-loader', 'sass'] // For single buddle js
+            loaders: ['style', 'css', 'postcss', 'sass'] // For single buddle js
         })
     }
 });
