@@ -1,4 +1,4 @@
-#Webpack Boilerplate
+# Webpack Boilerplate
 
 A webpack boilerplate that includes the following libs:
 
@@ -11,18 +11,18 @@ A webpack boilerplate that includes the following libs:
 
 in order to quickly build up a production-ready marketing website.
 
-###Example Page
+### Example Page
 [DEMO](http://geniuscarrier.com/demo/webpack-boilerplate/)
 
 ![GIF](http://geniuscarrier.me/images/webpack-boilerplate.gif)
 
-###Install dependencies
+### Install dependencies
 
 ```
 npm install
 ```
 
-###Developing locally
+### Developing locally
 
 1. Run
 
@@ -32,7 +32,7 @@ npm install
 
 2. In your browser, navigate to: [http://localhost:8080/](http://localhost:8080/)
 
-###Publish
+### Publish
 
 1. In `webpack.config.js` file, replace `www.example.com` with the real domain name.
 
